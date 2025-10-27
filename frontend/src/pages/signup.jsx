@@ -49,7 +49,7 @@ function Signup() {
 
   const googlesignup = async() =>{
     try {
-      const response = await signInWithPopup(auth , provider)
+      const response = await signInW2ithPopup(auth , provider)
       let user = response.user
       let name = user.displayName
       let email = user.email

@@ -6,7 +6,7 @@ import Signup from './pages/signup.jsx';
 import Profile from './pages/profile.jsx';
 import Forget from './pages/forgetpass.jsx';
 import { ToastContainer } from 'react-toastify';
-import {getcurrentuser} from "../../backend/controller/usercontroller.js"
+import {getcurrentuser} from './customhooks/getcurrentuser.js'
 import { useSelector } from 'react-redux';
  export const serverulr = "http://localhost:8000/";
 

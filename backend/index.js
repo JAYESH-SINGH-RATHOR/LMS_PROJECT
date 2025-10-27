@@ -5,7 +5,9 @@ import cookieParser from 'cookie-parser';
 import authrouter from './route/authroute.js';
 import cors from "cors"
 import userrouter from './route/userroute.js';
+import process from "process"
 dotenv.config();
+
 
 const port = process.env.PORT;
 const app = express()
@@ -25,7 +27,7 @@ app.get("/",(req , res) =>{
 })
 
 app.listen(port ,() => {
-    console.log("server started ");
+    console.log("server started " , port);
     connectdb();
 })
 
